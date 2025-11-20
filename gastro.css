@@ -1,0 +1,100 @@
+/* --- ESTILOS GENERALES --- */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: #f2f7f5;
+  color: #333;
+}
+
+/* --- ENCABEZADO Y MENÚ --- */
+header {
+  background: #2e8b57;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover, nav a.activo {
+  text-decoration: underline;
+  color: #b2f2bb;
+}
+
+/* --- SECCIONES PRINCIPALES --- */
+.hero {
+  background: url('https://images.unsplash.com/photo-1503264116251-35a269479413') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+.hero .btn {
+  background: #28a745;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.hero .btn:hover {
+  background: #218838;
+}
+
+/* --- FORMULARIO --- */
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+input, textarea, button {
+  padding: 0.7rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background: #2e8b57;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #256b46;
+}
+
+/* --- PIE DE PÁGINA --- */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* --- ANIMACIONES --- */
+section, main {
+  animation: aparecer 0.8s ease;
+}
+
+@keyframes aparecer {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
